@@ -10,6 +10,7 @@ const MainPage = ({ robots, fetchRobotsList, isPending, search, onSearchChange }
   
   useEffect(() => {
     fetchRobotsList()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
   const filteredRobots = robots.filter(({ name }) =>
